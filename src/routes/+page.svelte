@@ -2,6 +2,7 @@
 	import Card from './Card.svelte';
 	import { flip } from 'svelte/animate';
 	import type { CardType } from 'src/types/types';
+	const soundSrc = 'src/lib/reorder_sound.wav';
 
 	let freq: number = 250;
 	let time: number = 5000;
@@ -49,7 +50,7 @@
 	}
 
 	function reorderRandom() {
-		const audio = new Audio('/src/lib/reorder_sound.wav');
+		const audio = new Audio(soundSrc);
 		disable = true;
 		var interval = setInterval(() => {
 			list = list.sort((a, b) => {
