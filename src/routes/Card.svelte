@@ -2,6 +2,7 @@
 	import { slide } from 'svelte/transition';
 	import randomWords from 'random-words';
 	export let order: number;
+	export let score: number = 0;
 
 	const colorList = [
 		'eae4e9',
@@ -27,10 +28,15 @@
 
 		return gradient;
 	}
+
+	const color = generate();
 </script>
 
-<div class="Container" in:slide style="background: {generate()};">
-	<div>{order + '. ' + randomWords(5)}</div>
+<div class="Container" in:slide style="background: {color};">
+	<div class="Children">
+		{order + '. ' + randomWords(5)}
+		<b>{score}</b>
+	</div>
 </div>
 
 <style>
@@ -39,5 +45,10 @@
 		width: 100%;
 		padding: 20px;
 		border-radius: 15px;
+	}
+
+	.Children {
+		display: flex;
+		justify-content: space-between;
 	}
 </style>
