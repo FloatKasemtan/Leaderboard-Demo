@@ -1,0 +1,114 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "my-demo-app",
+      "version": "0.0.1",
+      "scripts": {
+        "dev": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview",
+        "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "prettier --plugin-search-dir . --check .",
+        "format": "prettier --plugin-search-dir . --write ."
+      },
+      "devDependencies": {
+        "@fontsource/fira-mono": "^4.5.0",
+        "@neoconfetti/svelte": "^1.0.0",
+        "@sveltejs/adapter-auto": "next",
+        "@sveltejs/kit": "next",
+        "@types/cookie": "^0.5.1",
+        "prettier": "^2.6.2",
+        "prettier-plugin-svelte": "^2.7.0",
+        "svelte": "^3.46.0",
+        "svelte-check": "^2.7.1",
+        "svelte-preprocess": "^4.10.6",
+        "tslib": "^2.3.1",
+        "typescript": "^4.7.4",
+        "vite": "^3.1.0"
+      },
+      "type": "module",
+      "dependencies": {
+        "random-words": "^1.2.0"
+      }
+    },
+    "prefix": "C:\\Users\\Administrator\\Documents\\GitHub\\Leaderboard-Demo"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "C:\\Users\\Administrator\\.pnpm-store\\v3",
+    "virtualStoreDir": "C:\\Users\\Administrator\\Documents\\GitHub\\Leaderboard-Demo\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "C:\\Users\\Administrator\\Documents\\GitHub\\Leaderboard-Demo",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.4.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.4.0",
+    "requester": "C:\\Users\\Administrator\\Documents\\GitHub\\Leaderboard-Demo",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/cookie/0.5.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/cookie",
+      "rawSpec": "^0.5.1"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cookie/0.5.1",
+    "requester": "C:\\Users\\Administrator\\Documents\\GitHub\\Leaderboard-Demo",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte/3.52.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte",
+      "rawSpec": "^3.46.0"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.52.0",
+    "requester": "C:\\Users\\Administrator\\Documents\\GitHub\\Leaderboard-Demo",
+    "status": "resolved"
+  },
+  "10 debug pnpm:update-check": {
+    "currentVersion": "6.30.1",
+    "latestVersion": "7.14.1"
+  },
+  "11 warn pnpm:install-check": {
+    "message": "Unsupported engine for registry.npmjs.org/vite/3.2.2: wanted: {\"node\":\"^14.18.0 || >=16.0.0\"} (current: {\"node\":\"v14.17.0\",\"pnpm\":\"6.30.1\"})",
+    "prefix": "C:\\Users\\Administrator\\Documents\\GitHub\\Leaderboard-Demo"
+  },
+  "12 error pnpm": {
+    "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+    "packageId": "registry.npmjs.org/vite/3.2.2",
+    "wanted": {
+      "node": "^14.18.0 || >=16.0.0"
+    },
+    "current": {
+      "node": "v14.17.0",
+      "pnpm": "6.30.1"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "Unsupported engine for registry.npmjs.org/vite/3.2.2: wanted: {\"node\":\"^14.18.0 || >=16.0.0\"} (current: {\"node\":\"v14.17.0\",\"pnpm\":\"6.30.1\"})",
+      "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+      "stack": "pnpm: Unsupported engine for registry.npmjs.org/vite/3.2.2: wanted: {\"node\":\"^14.18.0 || >=16.0.0\"} (current: {\"node\":\"v14.17.0\",\"pnpm\":\"6.30.1\"})\n    at checkEngine (C:\\snapshot\\dist\\pnpm.cjs)\n    at checkPackage (C:\\snapshot\\dist\\pnpm.cjs)\n    at packageIsInstallable (C:\\snapshot\\dist\\pnpm.cjs)\n    at resolveAndFetch (C:\\snapshot\\dist\\pnpm.cjs)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async resolveDependency (C:\\snapshot\\dist\\pnpm.cjs)\n    at async resolveDependenciesOfDependency (C:\\snapshot\\dist\\pnpm.cjs)\n    at async Promise.all (index 12)\n    at async resolveDependencies (C:\\snapshot\\dist\\pnpm.cjs)\n    at async C:\\snapshot\\dist\\pnpm.cjs"
+    }
+  }
+}
